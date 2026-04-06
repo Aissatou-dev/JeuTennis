@@ -1,0 +1,21 @@
+1.Que fait ce code ?
+Ce code permet de gérer le score d’un match de tennis.Il contient une méthode qui ajoute des points à un joueur lorsqu’il gagne un point, et une autre méthode qui retourne le score sous forme de texte.
+Le score est affiché selon les règles du tennis :
+•	0 = Love 
+•	1 = Fifteen 
+•	2 = Thirty 
+•	3 = Forty 
+•	égalité à partir de 3 points = Deuce 
+•	avantage = Advantage 
+•	victoire = Win 
+Donc, ce programme sert à afficher le score d’un match de tennis en respectant les règles spécifiques de ce sport.
+2 : Revue de code (code smells)
+En analysant le code, j’ai identifié plusieurs mauvaises pratiques :
+Tout d’abord, la méthode getScore est beaucoup trop longue. Elle contient trop de logique, ce qui la rend difficile à lire et à comprendre.
+Ensuite, il y a beaucoup de conditions imbriquées (if/else et switch). Cela rend le code complexe et difficile à maintenir.
+Les noms des variables ne sont pas clairs, par exemple m_score1 et m_score2. Ces noms ne décrivent pas bien leur rôle.
+Il y a aussi un problème de comparaison de chaînes de caractères avec "==". En Java, il faut utiliser equals(), sinon cela peut provoquer des erreurs.
+On remarque également une duplication de code dans la gestion des scores avec plusieurs switch similaires.
+La variable tempScore n’est pas très compréhensible et son utilisation n’est pas claire.
+Le code ne respecte pas bien le principe de responsabilité unique, car la méthode getScore fait trop de choses en même temps.
+Il n’y a pas de constantes pour les valeurs comme "Love", "Fifteen", etc., ce qui rend le code moins flexible.

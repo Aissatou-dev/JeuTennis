@@ -1,0 +1,8 @@
+Dans cet exercice, nous avons utilisé SonarLint pour analyser la qualité du code dans notre IDE.
+Après avoir lancé l’analyse, SonarLint affiche une liste d’erreurs appelées issues dans la vue SonarLint Report. Ces issues peuvent être mineures (en vert) ou majeures (en rouge).
+En double-cliquant sur une issue, on accède directement à la ligne de code concernée. Par exemple, une erreur demandait de renommer une variable car elle ne respectait pas la convention de nommage.
+SonarLint recommande d’utiliser le CamelCase au lieu des underscores. Après avoir renommé la variable, l’erreur disparaît.
+Cependant, la vue SonarLint Report ne se met pas à jour automatiquement. Il faut relancer l’analyse. Pour voir les modifications en temps réel, il est préférable d’utiliser la vue SonarLint On the Fly, qui se met à jour automatiquement.
+Il est aussi possible de désactiver l’analyse automatique, mais dans cet exercice, on la garde activée pour suivre les erreurs en continu.
+Attention : même si SonarLint aide à corriger certaines erreurs, il ne détecte pas tous les problèmes. Par exemple, un nom de variable peut respecter les règles mais ne pas être clair. Il faut donc toujours faire une vérification manuelle.
+Enfin, SonarLint signale une forte complexité cyclomatique. Cela signifie que le code est trop complexe. Cette erreur ne peut pas être corrigée immédiatement, mais sera améliorée plus tard lors du refactoring.
